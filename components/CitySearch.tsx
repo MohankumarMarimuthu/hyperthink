@@ -42,7 +42,7 @@ const CitySearch = () => {
         <input placeholder="search any city" className={styles.searchInput} onChange={(e) => setSearchTerm(e.target.value)}/>
         {data && data.main && 
             <div>
-              <p className={styles.todayTemp}>Today's temp - {data?.main?.temp}</p>
+              <p className={styles.todayTemp}>Today&apos;s temp - {data?.main?.temp}</p>
               <p className={styles.todayTemp}>Date - {data?.dt ? new Date(data.dt * 1000).toISOString().slice(0, 10) : 'N/A'}</p>
             </div>
         }
